@@ -295,7 +295,7 @@ All testing and validation is contained within a separate .md file. <br> [View T
 # Deployment
 
 1. This repository may be cloned directly into an editor by pasting the following command into the terminal:   
-`git clone https://github.com/Sean-Mc-Mahon/McTasticRecipes`    
+`git clone https://github.com/AlexNexton/biablog`    
 Alternatively, you can save a copy of this repository by clicking the green button "Clone or download" , then "Download Zip" button, and after extract the Zip file to your folder.
 2. In the terminal window change directory (CD) to the correct file location (directory that you have just created).
 3. Set up environment variables:
@@ -306,11 +306,16 @@ Alternatively, you can save a copy of this repository by clicking the green butt
     `os.environ["MONGO_URI"] = "YourMongoURI"`  
     .
 4. Install all requirements from the **requirements.txt** file putting this command into your terminal:   
-`pip3 install -r requirements.txt`  
-*Note: GitPod does not require `sudo`, so if you use another IDE, you will need to include `sudo` in the beginning of the command: `sudo pip3 install -r requirements.txt`.*
-5. Create a new Database called "recipe_manager" in [MongoDB Atlas](https://www.mongodb.com/).   
-*You can sign up for free account, if you do not have one.*
+- `pip3 install -r requirements.txt`  
+- *After installing the imports needed, use the `pip3 freeze --local > requirements.txt` to add the imports to the requirement.txt file.*
+
+    - *Note: GitPod does not require `sudo`, so if you use another IDE, you will need to include `sudo` in the beginning of the command: `sudo pip3 install -r requirements.txt`.*
+
+5. Create a new Database called "recipe_manager" for example, in [MongoDB Atlas](https://www.mongodb.com/).   
+*You can sign up for free account, if you do not already have an account.*
+
 6. In "recipe_manager" database create eight following collections:
+
 ###### categories
 ```
 _id: <ObjectId>
@@ -366,34 +371,26 @@ To deploy the project to [Heroku](https://heroku.com/) the following steps need 
 
 # Credits
 
-### Content
+## Content
+### References:
 
-1.  Google Fonts for font styles; https://fonts.google.com/
+- Firstly, The [Code Institute](https://codeinstitute.net/) Backend Mini project. A huge thank you!!
 
-2.  Youtube; Various resources for Materialize taken from [The Net Ninja](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gGrbtvASEZSlFEYBnPkmff)
+-  Github, Format of README modified from [Sean-Mc-Mahon](https://github.com/Sean-Mc-Mahon/McTasticRecipes) and [Michelle Clement](https://github.com/michellelclement/meatblog).
 
-3.  Youtube; Code for temperature conversion modified from [Whatsdev](https://youtu.be/EHclqGV_KME)
+- [Stack overflow](https://stackoverflow.com/) for helping me fix parts of my code.
 
-4.  Youtube; Code for temperature conversion modified from [Whatsdev](https://youtu.be/EHclqGV_KME)
+-  Google Fonts for font styles; https://fonts.google.com/
 
-5.  Github; Code for pagination modified from [irinatu17](https://github.com/irinatu17/MyCookBook)
-
-6.  Github; Code for url validation and placehoder image modified from [Paulloy](https://github.com/paulloy/whiskey_herald_msp3/blob/master/app.py)
-
-7.  Github; Format of README modified from [Mr-Smyth](https://github.com/Mr-Smyth/circles/blob/master/README.md) and [irinatu17](https://github.com/irinatu17/MyCookBook/blob/master/README.md)
-
-7.  Icons sourced from [Iconmonstr](https://iconmonstr.com/)
-
-8.  Button icons sourced from [Fontawesome](https://fontawesome.com/)
+-  Button icons sourced from [Fontawesome](https://fontawesome.com/)
 
  
 
 ### Acknowledgements
 
-1.  My mentor Adegbenga Adeye for his support and input.
-
-2.  My peers on slack for their generosity in sharing their knowledge and experience.
-
+ - Firstly, I would like to thank my friend John for believing I could get this project completed as it has personally been a difficult couple of months. 
+ - Secondly, My Mother Caroline, for ringing me and helping me get my feet back on  the ground - Thanks Mom.
+ - And finally, My friend Nessa, who is always there when I need her and who always pushes me to deliver my best - Thank you.
 ---
 
 This project is for educational use only
