@@ -124,7 +124,7 @@ A standard layout is fully responsive on mobile devices and larger screens.
 
 #### Color Scheme
 
-Colors are kept to a minimum in order to keep focus on the imagery of the recipes, chosen colousr are various shades of grey. Color scheme can be found on my Coolors profile: [Coolors](https://coolors.co/u/sean_mcmahon)
+Colors are kept to a minimum in order to keep focus on the imagery of the recipes, chosen colousr are various shades of grey. Color scheme can be found on my Coolors profile: [Coolors]()
 
 ![Color Palette]()
 
@@ -136,10 +136,8 @@ Colors are kept to a minimum in order to keep focus on the imagery of the recipe
 
 All images, and recipes are the authors own unless provided by other users. Logos are also produced by the author using Affinity Design.
 
-- [Balsamiq Wireframe](https://github.com/Sean-Mc-Mahon/McTasticRecipes/blob/master/wireframes/mctastic-wire.pdf)
-
-- [Affinity Designer Logo Process](https://github.com/Sean-Mc-Mahon/McTasticRecipes/blob/master/wireframes/logo-design.jpg)
-
+- [Balsamiq Wireframe]()
+ 
 ##### back to [top](#table-of-contents)
 
 ---
@@ -260,7 +258,6 @@ The Footer features:
 ### Semantics
 
 - HTML5 Semantics used throughout (header, nav, main etc...)
-- Titles used throughout (McTastic Recipes, McTastic Profiles etc...)
 - Language is set to english (`<html lang="en">`)
 
 ---
@@ -277,7 +274,7 @@ The Footer features:
 ### To Create a Clone of the BiaBook Repository and Run Locally
 Cloning the repository makes a copy of the of the repository which you download and store on your machine locally.
 
-To make a clone of Meatblog, follow the following steps:
+To make a clone of BiaBook, follow the following steps:
 1. Visit the main repository of by clicking here --> [biabook](https://github.com/AlexNexton/biablog)
 1. Above all the repository files and folders, you will find two Green buttons. Click on the one displaying ‘Clone’ with a downward arrow and a download icon.
 1. With the ‘HTTPS’ method selected, click the ‘copy’ button next to the URL. Here you will find the link you will need to copy. The link to copy BiaBook is: https://github.com/AlexNexton/biablog
