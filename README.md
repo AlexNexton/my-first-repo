@@ -316,58 +316,26 @@ Alternatively, you can save a copy of this repository by clicking the green butt
 _id: <ObjectId>
 category_name: <String>
 ```
-###### food Groups
-```
-_id: <ObjectId>
-group_name: <String>
-```
-###### ingredients
-```
-_id: <ObjectId>
-ingredient_name: <String>
-ingredient_cal: <String>
-group_name: <String>
-unit_name: <String>
-created_by: <String>
-```
-###### prep
-```
-_id: <ObjectId>
-prep: <String>
-```
+
 ###### Recipes
 ```
 _id: <ObjectId>
 category_name: <String>
 recipe_name: <String>
 recipe_ingredients: <String>
-recipe_instructions: <String>
+recipe_method: <String>
 recipe_image: <String>
-recipe_serves: <String>
-recipe_time: <String>
-recipe_cals: <String>
-recipe_description: <Array>
-recipe_is_vegan: <Array>
-recipe_is_vegetarian: <ObjectId>
 created_by: <String>
+
 ```
-###### sort_parameters
-```
-_id: <ObjectId>
-parameter_name: <String>
-```
-###### units
-```
-_id: <ObjectId>
-unit_name: <String>
-```
+
 ###### users
 ```
 _id: <ObjectId>
 username: <String>
 password: <String>
 ```
-7. You will now be able to run the application using the following command `python3 run.py`. 
+7. You will now be able to run the application using the following command `python3 app.py`. 
 
 ### Heroku Deployment
 To deploy the project to [Heroku](https://heroku.com/) the following steps need to be completed:
@@ -383,11 +351,11 @@ To deploy the project to [Heroku](https://heroku.com/) the following steps need 
 6. To start the web process, put the following command into the terminal: `heroku ps:scale web=1` to scale dynos
 7. In the **Settings** tab of the new Heroku app, click on "Reveal Config Vars" and set the following config vars:
     - **IP** : 0.0.0.0
-    - **PORT** : 8080
+    - **PORT** : 5000
     - **MONGO_URI** : `<link to your MongoDB database>`
     - **SECRET_KEY** : `<your secret key>`
     - **DEBUG**: **FALSE**  
-*Note: your MONGO_URI and SECRET_KEY must match the ones you entered in .env.py file*
+*Note: your MONGO_URI and SECRET_KEY must match the ones you entered in 'env.py' file*
 
 8. The app will be deployed and ready to run. Click "Open App" to view the app.   
 
