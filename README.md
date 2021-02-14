@@ -4,7 +4,7 @@
 
 ### [GitHub Repository](https://github.com/AlexNexton/biablog)
 
-![Various Devices](https://github.com/Sean-Mc-Mahon/McTasticRecipes/blob/master/wireframes/resposiveness.JPG)
+![Responsive]()
 
 BiaBook (where 'bia' is the Irish word for food) is my Milestone 3 project.
 It is part of the Fullstack Software Development Course of [Code Institute](https://codeinstitute.net/).
@@ -78,6 +78,7 @@ BiaBook is a simple recipe website where users can share their recipes and view 
 - As a site owner, I want to be able to add or remove categories.
 - As a site owner, I want my users to be able to sign up to the website.
 - As a site owner, I want my users to be able to connect with the owner/team via social media channels.
+- Testing information for User Stories can be found in a separate testing.md file.
 ---
 
 ---
@@ -125,7 +126,7 @@ A standard layout is fully responsive on mobile devices and larger screens.
 
 Colors are kept to a minimum in order to keep focus on the imagery of the recipes, chosen colousr are various shades of grey. Color scheme can be found on my Coolors profile: [Coolors](https://coolors.co/u/sean_mcmahon)
 
-![Color Palette](https://github.com/Sean-Mc-Mahon/McTasticRecipes/blob/master/wireframes/mctastic-colors.JPG)
+![Color Palette]()
 
 #### Typography
 
@@ -172,28 +173,7 @@ The Footer features:
 - Contact section
 - Copyright Information
 - Links to social media platforms.
-
-### Elements on Multiple Pages
-
-#### Search Sort Filter 
-(index, search, single_recipe)
-
-- The index page has a search bar, filter and sort feature. The search feature searches for keywords in recipe titles and ingredients. If a user performs a search they will be able to sort the search results.
-- The sort feature allows users to sort the results by A-Z, Z-A, latest created and oldest created.
-- The filter allows users to display recipes under the categories of cooking, baking, snacks or all.
-
-#### Recipe Cards 
-(index, view_profile)
-
-- Cards are displayed for each recipe. On small devices the cards may be expnded to reveal more information (one card per row on small devices, two cards per row on medium devices). <br>
-- On large devices users can hover over cards to reveal more information (3 cards per row). <br>
-
-#### Ingredient Cards 
-(units, add_recipe)
-
-- Cards are displayed for each ingredient. On small devices the cards may be expnded to reveal more information (one card per row on small devices, two cards per row on large devices). If logged in a user may add ingredients, if ingredient name does not already exist it will be entered. If a user created the ingredient they may edit or delete it. Admin user may see the creator of any ingredient and may delete any ingredient. 
-
-
+ 
 ### Individual Pages
 
 
@@ -255,25 +235,24 @@ The Footer features:
 - [Kaffeine](https://kaffeine.herokuapp.com/) - Used to keep Heroku app from falling asleep.
 - [Uptime Robot](https://uptimerobot.com/) - Used to keep Heroku app from falling.
 
-### Libraries
-ss.com/) - is a fr
-- [Materialize](https://materializecamework for building responsive, mobile-first websites. 
+###  Back-end 
 
-- [JQuery](https://jquery.com/) - is a Javascirpt library. 
+- [Python](https://www.python.org/) - backend programming Language.
+- [Flask](https://flask.palletsprojects.com/en/1.1.x/) - Python framework For pagination, etc.
+- [Dnspython](https://www.dnspython.org/)-  DNS toolkit for Python.
+- [Heroku](https://www.heroku.com) - Cloud application platform. 
+- [Mongo DB Atlas](https://www.mongodb.com/cloud/atlas) - non relational, NO-SQL Database - Cloud based MongoDB server.
+ 
+###  Front-end 
 
-- [Flask](https://flask.palletsprojects.com/en/1.1.x/) - is a lightweight WSGI web application framework - used it to construct and render pages.
-
-- [Jinja](https://flask.palletsprojects.com/en/1.1.x/) - is a templating language for Python - used to display data from the backend in HTML.
-
-- [PyMongo](https://flask.palletsprojects.com/en/1.1.x/) - is the recommended way to work with MongoDB from Python - used to communicate between Python and MongoDB.
-
-- [dnspython](https://pypi.org/project/dnspython/) - is a DNS toolkit for Python.
-
+- [Javascript](https://www.javascript.com/) - For auto-complete, navbar, etc.
+- [Jquery](https://jquery.com/) - For auto-complete, navbar, etc.
+- [Materialize](https://materializecss.com/)- for clean front-end design >
+ 
 ### Version Control
 
 - [Git](https://git-scm.com/) - used for version control
-
-
+ 
 ---
 
 # Accessibility
@@ -290,31 +269,49 @@ ss.com/) - is a fr
 - Alt Text: Alt text dynamically applied to images eg `alt="{{recipe.recipe_name}} image"`
 
 # Testing
-All testing and validation is contained within a separate .md file. <br> [View TESTING.md](TESTING.md)
+
+ - All testing and validation is contained within a separate .md file. <br> [View TESTING.md](TESTING.md)
 
 # Deployment
 
-1. This repository may be cloned directly into an editor by pasting the following command into the terminal:   
-`git clone https://github.com/AlexNexton/biablog`    
-Alternatively, you can save a copy of this repository by clicking the green button "Clone or download" , then "Download Zip" button, and after extract the Zip file to your folder.
-2. In the terminal window change directory (CD) to the correct file location (directory that you have just created).
-3. Set up environment variables:
-    - Create **.env** file in the root directory.
-    - On the top of the file add `import os` to set the environment variables in the operating system.
-    - Set the connection to your MongoDB database(MONGO_URI) and a SECRET_KEY with the following syntax:
-    `os.environ["SECRET_KEY"] = "YourSecretKey"`   
-    `os.environ["MONGO_URI"] = "YourMongoURI"`  
-    .
-4. Install all requirements from the **requirements.txt** file putting this command into your terminal:   
-- `pip3 install -r requirements.txt`  
-- *After installing the imports needed, use the `pip3 freeze --local > requirements.txt` to add the imports to the requirement.txt file.*
+### To Create a Clone of the BiaBook Repository and Run Locally
+Cloning the repository makes a copy of the of the repository which you download and store on your machine locally.
 
-    - *Note: GitPod does not require `sudo`, so if you use another IDE, you will need to include `sudo` in the beginning of the command: `sudo pip3 install -r requirements.txt`.*
+To make a clone of Meatblog, follow the following steps:
+1. Visit the main repository of by clicking here --> [biabook](https://github.com/AlexNexton/biablog)
+1. Above all the repository files and folders, you will find two Green buttons. Click on the one displaying ‘Clone’ with a downward arrow and a download icon.
+1. With the ‘HTTPS’ method selected, click the ‘copy’ button next to the URL. Here you will find the link you will need to copy. The link to copy BiaBook is: https://github.com/AlexNexton/biablog
+1. Open the working directory where you want the repository to be cloned to, and in the terminal use the command and hit enter: 
+        git clone https://github.com/AlexNexton/biablog.git
+1. All the files will now be cloned into your chosen workspace.
+1. Add/create a env.py file with the following details:
+	    Import os
+	    os.environ.setdefault("IP", "To be added by user")
+        os.environ.setdefault("PORT", "To be added by user")
+        os.environ.setdefault("SECRET_KEY", "To be added by user")
+        os.environ.setdefault("MONGO_URI", "To be added by user")
+        os.environ.setdefault("MONGO_DBNAME", "To be added by user")
 
-5. Create a new Database called "recipe_manager" for example, in [MongoDB Atlas](https://www.mongodb.com/).   
-*You can sign up for free account, if you do not already have an account.*
+Do not commit this page.
 
-6. In "recipe_manager" database create eight following collections:
+1. Create a file named  .gitignore  with the contents simply .env.py
+
+1. To install the modules required on the requirements.txt file, run the command:
+	pip3 install -r requirements.txt
+
+1. You can run the code using the command:
+	python3 app.py in the terminal.
+
+
+
+## Secret Key & Key Variables
+Secret keys should not be pushed to GitHub, or shared with anyone. To avoid this happening, I included my Secret Key and key variables in a file which is stored locally.
+
+The file env.py includes these key variables and secret key. 
+
+To stop this file being pushed to GitHub when commits are made and pushed, I created a .gitignore file which included the file name within it. Every time commits are made and pushed, the env.py file is ignored.
+
+## MongoDB database Elements Used
 
 ###### categories
 ```
@@ -339,34 +336,36 @@ created_by: <String>
 _id: <ObjectId>
 username: <String>
 password: <String>
-```
-7. You will now be able to run the application using the following command `python3 app.py`. 
+``` 
 
-### Heroku Deployment
-To deploy the project to [Heroku](https://heroku.com/) the following steps need to be completed:
-1. Create a **requirement.txt** file, which contains a list of the dependencies, using the following command in the terminal:  
-`pip3 freeze > requirements.txt`
-2. Create a **Procfile**, in order to tell Heroku how to run the project, using the following command in the terminal:   
-`echo web: python run.py > Procfile`
-3. `git add`, `git commit` and `git push` these files to GitHub repository
-4. Create a **new app** in Heroku, assigning a name (must be unique) and set a region (for my project I set Europe)
-5. From the Heroku dashboard link the new Heroku app to your GitHub repository:    
-    - "Deploy" -> "Deployment method" -> "GitHub"
-    - then "Enable automatic deployment"
-6. To start the web process, put the following command into the terminal: `heroku ps:scale web=1` to scale dynos
-7. In the **Settings** tab of the new Heroku app, click on "Reveal Config Vars" and set the following config vars:
-    - **IP** : 0.0.0.0
-    - **PORT** : 5000
-    - **MONGO_URI** : `<link to your MongoDB database>`
-    - **SECRET_KEY** : `<your secret key>`
-    - **DEBUG**: **FALSE**  
+### Deploying Website To Heroku 
+
+ 
+
+By deploying BiaBook to [Heroku](https://heroku.com/), I was able to run my Python app and view a live version of the website which updated with each push I made. This link is also shareable to other users to be able to test the site.
+
+1. In the terminal, I created a requirements.txt and Procfile using the following commands:
+    1. pip3 freeze –local > requirements.txt
+    1. echo web: python app.py > Procfile (be sure to create this file with a capital P)
+1. Commit the new files to GitHub
+1. Within my [Heroku](https://heroku.com/) account I created a new App called *'biablog'* and chose the region closes to me, Europe.
+1. Within the deploy sections which opened automatically after creating the app, I selected the Deployment Method of Connecting to GitHub via the logo. 
+1. Beneath this, I typed the GitHub repository name *'biablog'* and hit search. When the correct repository was found I clicked the ‘connect’ button.
+1. Next, I clicked on ‘Settings’, then in Config Vars, I clicked ‘Reveal config Vars’. I filled out the Config Vars with the following information:
+
+Config Vars | Config Vars
+------------ | -------------
+IP | 0.0.0.0
+PORT | 5000
+SECRET_KEY | To be added by user
+MONGO_URI | `<link to your MongoDB database>`
+MONGO_DBNAME | To be added by user
+
 *Note: your MONGO_URI and SECRET_KEY must match the ones you entered in 'env.py' file*
 
-8. The app will be deployed and ready to run. Click "Open App" to view the app.   
-
-**Note**: if you have not linked GitHub and Heroku following step **5**, alternatively as the last step of deployment, you can put the following command into your terminal:   
- `heroku login`, after a successful log in `git push heroku master` - to push the app to Heroku, and finally click "Open App" in Heroku dashboard to view the app.
-
+7. In Deploy, I clicked ‘Enable Automatic Deploys’ and deployed from the Master branch.
+8.	Follow this I then clicked ‘Deploy Branch’ and the app was deployed successfully at the URL [BiaFood](https://biablog.herokuapp.com/) which is *https://biablog.herokuapp.com/*
+ 
 ---
 
 # Credits
